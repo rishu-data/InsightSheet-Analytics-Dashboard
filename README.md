@@ -242,174 +242,281 @@ Automated Insights
 Forecasting
         ↓
 Reports & Exports
+```
 
-🧪 Multi-Dataset Validation
-InsightSheet has been tested using multiple datasets with different sizes and business characteristics.
-Sample Business Sales Dataset
-Example results included:
-Revenue: approximately $200K
-159 orders
-12 customers
-Product performance analysis
-Customer concentration analysis
-Inactive customer detection
-Mobile Sales Dataset
-Example results included:
-Revenue: approximately $769M
-3,835 orders
-988 customers
-Revenue decline detection
-Product performance analysis
-Customer inactivity analysis
-Business recommendations
-Superstore Dataset
-Example results included:
-Revenue: approximately $2.29M
-5,009 orders
-793 customers
-98.5% repeat customer rate
-Monthly sales analysis
-Product performance analysis
-Customer-level analysis
-Inactive customer detection
-Customer concentration analysis
-Validation Objective
-Testing across multiple datasets was performed to verify that the application dynamically adapts its calculations and insights according to the uploaded data rather than relying on hard-coded dashboard values.
-📊 Example Business Insights
-InsightSheet can identify patterns such as:
-Revenue Performance
-Strong or declining monthly revenue
-Month-to-Date performance changes
-Seasonal peaks and weak periods
-Product Performance
-Highest revenue-generating products
-Fastest-growing products
-Products experiencing significant declines
-Customer Performance
-Highest-value customers
-Repeat customer behavior
-Potentially inactive customers
-Customer concentration risk
-Recommended Actions
-Depending on the dataset, the application can suggest actions such as:
-Re-engaging inactive high-value customers
-Investigating significant revenue declines
-Promoting rapidly growing products
-Reviewing declining products
-Monitoring customer concentration
-Planning inventory around seasonal demand
-🛠️ Technology Stack
-Programming & Data Analytics
-Python
-Pandas
-Application Framework
-Reflex
-Version Control
-Git
-GitHub
-🧹 Data Quality Handling
-Real-world datasets frequently contain inconsistencies.
-InsightSheet includes validation and processing logic for issues such as:
-Blank rows
-Missing values
-Missing or unreadable dates
-Inconsistent date information
-Numeric data processing
-Required business-column detection
-Dataset validation
-The application is designed to communicate data-quality limitations instead of presenting unsupported results.
-📁 Project Structure
-InsightSheet-Analytics-Dashboard/
-│
-├── app/
-│   └── Application source code
-│
-├── assets/
-│   └── Application assets
-│
-├── requirements.txt
-├── rxconfig.py
-├── README.md
-└── .gitignore
-💡 Business Value
+---
+
+# 💡 Business Recommendations
+
+InsightSheet converts analytical findings into actionable business recommendations, such as:
+
+- Re-engage high-value inactive customers
+- Investigate significant revenue declines
+- Promote high-growth products
+- Review declining product performance
+- Monitor customer concentration risk
+- Plan inventory and marketing around seasonal demand
+- Prioritize customer retention opportunities
+
+---
+
+# 🛠️ Technology Stack
+
+### Programming & Data Analytics
+
+- Python
+- Pandas
+
+### Application Framework
+
+- Reflex
+
+### Version Control
+
+- Git
+- GitHub
+
+---
+
+# 🧪 Multi-Dataset Validation
+
+InsightSheet has been tested with multiple datasets of different sizes and business characteristics to verify that analytics dynamically adapt to the uploaded data.
+
+### Sample Business Sales Dataset
+
+- Approximately $200K revenue
+- 159 orders
+- 12 customers
+- Revenue and product analysis
+- Customer concentration analysis
+- Inactive customer detection
+- Automated business recommendations
+
+### Mobile Sales Dataset
+
+- Approximately $769M revenue
+- 3,835 orders
+- 988 customers
+- Revenue trend analysis
+- Product performance analysis
+- Customer inactivity analysis
+- Automated recommendations
+
+### Superstore Dataset
+
+- Approximately $2.29M revenue
+- 5,009 orders
+- 793 customers
+- 98.5% repeat customer rate
+- Monthly sales analysis
+- Product performance analysis
+- Customer-level analysis
+- Inactive customer detection
+- Customer concentration analysis
+
+### Validation Objective
+
+The application was tested across multiple datasets to verify that KPIs, customer analytics, product analysis, alerts, and recommendations are dynamically calculated from the uploaded data rather than relying on fixed sample values.
+
+---
+
+# 🧹 Data Quality Handling
+
+InsightSheet is designed to work with real-world business data and includes validation for common data-quality issues.
+
+The application can identify and handle scenarios such as:
+
+- Missing values
+- Blank rows
+- Missing or unreadable dates
+- Inconsistent date information
+- Numeric data processing
+- Required business-column detection
+- Dataset validation
+
+Data-quality warnings are surfaced to help users understand potential limitations in their analysis.
+
+---
+
+# 📊 Analytics Modules
+
+### Executive Analytics
+
+- Total Revenue
+- Total Orders
+- Average Order Value
+- Total Customers
+- Repeat Customer Rate
+- Revenue Trends
+
+### Product Analytics
+
+- Top Products
+- Revenue Contribution
+- Product Growth
+- Declining Products
+- Product Performance Trends
+
+### Customer Analytics
+
+- Top Customers
+- Customer Revenue Contribution
+- Repeat Purchasing Behavior
+- Customer Concentration
+- Inactive Customer Detection
+
+### Customer Intelligence
+
+- RFM Segmentation
+- Recency Analysis
+- Frequency Analysis
+- Monetary Analysis
+- Customer Retention Opportunities
+
+### Forecasting & Reporting
+
+- Revenue Forecasting
+- PDF Reports
+- CSV Exports
+- Excel Exports
+
+---
+
+# 📸 Screenshots
+
+Application screenshots will be documented here to showcase the major analytics modules.
+
+Recommended screenshots include:
+
+1. Executive Dashboard
+2. Revenue Analytics
+3. Customer Intelligence
+4. RFM Customer Segmentation
+5. Automated Business Insights
+6. Forecasting
+7. Reports & Exports
+
+> Screenshots will be added to the `assets/screenshots/` directory.
+
+---
+
+# 💼 Business Value
+
 InsightSheet is designed to help businesses move from:
-Raw Data → Analysis → Insights → Action
-Instead of manually calculating KPIs and creating reports, users can upload their business data and receive a structured analytical view of:
-Revenue performance
-Customer behavior
-Product performance
-Retention risks
-Growth opportunities
-Business recommendations
-🎯 Target Users
-InsightSheet can be useful for:
-Small business owners
-Sales teams
-E-commerce businesses
-Retail businesses
-Business analysts
-Customer success teams
-Operations teams
-Management teams
-⚠️ Limitations
-Forecast quality depends on the amount and quality of historical data.
-Customer inactivity thresholds may need to be customized for different businesses.
-Automated recommendations should be reviewed within the actual business context.
-Analysis depends on the availability of appropriate business columns.
-Data quality issues can affect analytical accuracy.
-🔮 Future Scope
-Potential future enhancements include:
-Customer Cohort Analysis
-Customer Lifetime Value (CLV)
-Advanced predictive analytics
-Custom business-defined KPIs
-User authentication
-Saved dashboards
-Multi-user workspaces
-Cloud database integration
-SaaS subscription functionality
-Advanced customer retention modeling
-📌 Project Status
-Status: Functional Analytics MVP
+
+**Raw Data → Analysis → Insights → Action**
+
+Instead of manually analyzing spreadsheets, users can upload their business data and quickly understand:
+
+- Revenue performance
+- Customer behavior
+- Product performance
+- Retention risks
+- Growth opportunities
+- Customer concentration
+- Business recommendations
+
+This makes the platform useful for business owners, analysts, sales teams, customer success teams, and management.
+
+---
+
+# ⚠️ Limitations
+
+- Forecast quality depends on the amount and quality of historical data.
+- Customer inactivity thresholds may need to be customized for different businesses.
+- Automated recommendations should be reviewed within the actual business context.
+- Analysis depends on the availability of appropriate business columns.
+- Data-quality issues can affect analytical accuracy.
+
+---
+
+# 📌 Project Status
+
+🟢 **Functional Analytics MVP**
+
 InsightSheet currently supports:
-CSV/Excel data upload
-Data cleaning and validation
-Executive KPI analysis
-Sales and revenue analytics
-Customer intelligence
-Inactive customer detection
-Customer concentration analysis
-RFM customer segmentation
-Automated business insights
-Forecasting
-PDF reporting
-CSV/Excel exports
+
+- CSV and Excel data upload
+- Data cleaning and validation
+- Automatic column detection
+- Executive KPI analysis
+- Sales and revenue analytics
+- Customer intelligence
+- Inactive customer detection
+- Customer concentration analysis
+- RFM customer segmentation
+- Automated business insights
+- Revenue forecasting
+- PDF reporting
+- CSV and Excel exports
+
 The application has been validated using multiple datasets.
-📚 Skills Demonstrated
+
+---
+
+# 🔮 Future Scope
+
+Potential future enhancements include:
+
+- Customer Cohort Analysis
+- Customer Lifetime Value (CLV)
+- Advanced predictive analytics
+- Custom business-defined KPIs
+- User authentication
+- Saved dashboards
+- Multi-user workspaces
+- Cloud database integration
+- SaaS subscription functionality
+- Advanced customer retention modeling
+
+---
+
+# 🧠 Skills Demonstrated
+
 This project demonstrates practical skills in:
-Business Analytics
-Data Cleaning
-Data Validation
-Exploratory Data Analysis
-Python
-Pandas
-Customer Analytics
-RFM Segmentation
-Revenue Analysis
-KPI Development
-Business Intelligence
-Data Visualization
-Automated Insight Generation
-Dashboard Development
-Business Problem Solving
-Git & GitHub
-Product Thinking
-⚖️ Disclaimer
+
+- Business Analytics
+- Data Analysis
+- Data Cleaning
+- Data Validation
+- Exploratory Data Analysis
+- Python
+- Pandas
+- Customer Analytics
+- RFM Segmentation
+- Revenue Analysis
+- KPI Development
+- Business Intelligence
+- Data Visualization
+- Automated Insight Generation
+- Dashboard Development
+- Business Problem Solving
+- Git & GitHub
+- Product Thinking
+
+---
+
+# ⚖️ Disclaimer
+
 InsightSheet is developed as a portfolio and analytics demonstration project.
+
 Automated insights, forecasts, and recommendations should be validated against the actual business context and underlying data before being used for operational or financial decisions.
-👨‍💻 Author
-Rishu Singh
-B.Tech CSE (Data Science)
+
+---
+
+# 👨‍💻 Author
+
+**Rishu Singh**
+
+B.Tech CSE (Data Science)  
 Data Analytics | Business Intelligence | SQL | Power BI
-GitHub: @rishu-data⁠�
-LinkedIn: www.linkedin.com/in/rishu-singh-51512b3b3
+
+**GitHub:** [@rishu-data](https://github.com/rishu-data)
+
+**LinkedIn:** [Rishu Singh](https://www.linkedin.com/in/rishu-singh-51512b3b3)
+
+---
+
+⭐ If you find this project useful or interesting, consider giving the repository a star.
+
+
