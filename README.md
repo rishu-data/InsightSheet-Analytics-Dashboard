@@ -20,6 +20,14 @@ The goal is to reduce the manual effort required to analyze spreadsheet-based bu
 
 ---
 
+## 🚀 Live Demo
+
+👉 **[Launch InsightSheet](https://insightsheet-analytics-dashboard-neon-ring.reflex.run/)**
+
+Upload your CSV or Excel business dataset and explore automated analytics, customer intelligence, RFM segmentation, forecasting, and actionable business recommendations.
+
+---
+
 ## 💼 Business Problem
 
 Small businesses often store their sales and customer information in spreadsheets but may not have dedicated data analysts or Business Intelligence infrastructure.
