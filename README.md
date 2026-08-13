@@ -216,9 +216,9 @@ Forecast results should be interpreted together with the quality, volume, and hi
 
 Users can generate and export analytical outputs through:
 
-PDF reports
-CSV exports
-Excel exports
+-PDF reports
+-CSV exports
+-Excel exports
 
 This allows users to share analytical findings with business stakeholders and maintain downloadable analytical records.
 
