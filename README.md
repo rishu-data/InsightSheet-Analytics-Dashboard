@@ -14,7 +14,7 @@
 
 **InsightSheet** is a web-based business analytics application designed to help small businesses and non-technical users transform raw CSV and Excel data into meaningful business insights.
 
-The application automatically processes uploaded sales and customer data and generates executive KPIs, revenue analytics, customer intelligence, RFM segmentation, automated business insights.
+The application automatically processes uploaded sales and customer data and generates executive KPIs, revenue analytics, customer intelligence, RFM segmentation, automated business insights, forecasting and downloadable reports.
 
 The goal is to reduce the manual effort required to analyze spreadsheet-based business data and convert raw information into clear, decision-ready insights.
 
@@ -61,6 +61,7 @@ Examples include:
 - Segment customers using RFM analysis
 - Generate plain-English business insights
 - Provide forecasting capabilities
+- Generate downloadable reports
 - Make analytics accessible to non-technical users
 
 ---
@@ -211,6 +212,18 @@ Forecast results should be interpreted together with the quality, volume, and hi
 
 ---
 
+📄 Reporting & Export
+
+Users can generate and export analytical outputs through:
+
+PDF reports
+CSV exports
+Excel exports
+
+This allows users to share analytical findings with business stakeholders and maintain downloadable analytical records.
+
+---
+
 # 🔄 Data Analytics Workflow
 
 ```text
@@ -235,6 +248,8 @@ RFM Segmentation
 Automated Insights
         ↓
 Forecasting
+        ↓
+Reports & Exports
 ```
 
 ---
@@ -366,9 +381,12 @@ Data-quality warnings are surfaced to help users understand potential limitation
 - Monetary Analysis
 - Customer Retention Opportunities
 
-### Forecasting 
+### Forecasting & Reporting
 
 - Revenue Forecasting
+- PDF reports
+- CSV reports
+- Excel reports
 
 ---
 
@@ -384,6 +402,7 @@ Recommended screenshots include:
 4. RFM Customer Segmentation
 5. Automated Business Insights
 6. Forecasting
+7. Reports & Exports
 
 > Screenshots will be added to the `assets/screenshots/` directory.
 
@@ -455,7 +474,6 @@ Potential future enhancements include:
 - Cloud database integration
 - SaaS subscription functionality
 - Advanced customer retention modeling
-- Reporting & Export functionality (PDF, CSV, Excel)
 
 ---
 
