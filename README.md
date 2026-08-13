@@ -212,7 +212,7 @@ Forecast results should be interpreted together with the quality, volume, and hi
 
 ---
 
-📄 Reporting & Export
+# 📄 Reporting & Export
 
 Users can generate and export analytical outputs through:
 
@@ -455,6 +455,8 @@ InsightSheet currently supports:
 - RFM customer segmentation
 - Automated business insights
 - Revenue forecasting
+- PDF reporting
+- CSV and Excel exports
 
 The application has been validated using multiple datasets.
 
