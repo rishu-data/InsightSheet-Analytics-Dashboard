@@ -3,6 +3,8 @@ import reflex as rx
 from app.pages.about import about_page
 from app.pages.dashboard import dashboard_page
 from app.pages.data_quality import data_quality_page
+from app.pages.feedback import feedback_page
+from app.pages.pricing import pricing_page
 from app.pages.upload import upload_page
 from app.states.ask_state import AskState
 from app.states.dashboard_state import DashboardState
@@ -47,4 +49,6 @@ app.add_page(
     ],
 )
 app.add_page(data_quality_page, route="/data-quality")
+app.add_page(feedback_page, route="/feedback")
+app.add_page(pricing_page, route="/pricing")
 app.add_page(about_page, route="/about")

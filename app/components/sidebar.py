@@ -68,6 +68,18 @@ def sidebar(active: str) -> rx.Component:
                 active == "quality",
             ),
             _nav_item(
+                "message-square-heart",
+                "Feedback",
+                "/feedback",
+                active == "feedback",
+            ),
+            _nav_item(
+                "credit-card",
+                "Pricing / Upgrade",
+                "/pricing",
+                active == "pricing",
+            ),
+            _nav_item(
                 "info", "About InsightSheet", "/about", active == "about"
             ),
             class_name="flex flex-col gap-1 w-full min-w-0 p-4",
@@ -121,6 +133,13 @@ def _top_bar(active: str, title: str, subtitle: str) -> rx.Component:
                 "/data-quality",
                 active == "quality",
             ),
+            _pill(
+                "message-square-heart",
+                "Feedback",
+                "/feedback",
+                active == "feedback",
+            ),
+            _pill("credit-card", "Pricing", "/pricing", active == "pricing"),
             _pill("info", "About", "/about", active == "about"),
             class_name="lg:hidden flex items-center gap-2 overflow-x-auto px-4 sm:px-6 pb-3",
         ),
