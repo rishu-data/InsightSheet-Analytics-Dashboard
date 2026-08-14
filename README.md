@@ -525,6 +525,7 @@ Application screenshots will be documented here to showcase the major analytics 
 
 Screenshots will be stored inside:
 
+assets/screenshots/
 ```text
 assets/
 └── screenshots/
