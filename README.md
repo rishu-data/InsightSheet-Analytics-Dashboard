@@ -10,6 +10,14 @@
 
 ---
 
+### 🚀 Live Demo
+
+👉 **[Open InsightSheet Live Demo](https://insightsheet-analytics-dashboard-neon-ring.reflex.run/)**
+
+> Explore the deployed InsightSheet application and experience the analytics dashboard, customer intelligence, RFM segmentation, forecasting, automated insights, reports, feedback system, and Pro upgrade flow.
+
+---
+
 ## 📌 Project Overview
 
 **InsightSheet** is a web-based business analytics application designed to help small businesses and non-technical users transform raw CSV and Excel data into meaningful business insights.
