@@ -2,5 +2,6 @@ import reflex as rx
 
 config = rx.Config(
     app_name="app",
+    show_reflex_badge=False,
     plugins=[rx.plugins.SitemapPlugin(), rx.plugins.TailwindV4Plugin()],
 )
