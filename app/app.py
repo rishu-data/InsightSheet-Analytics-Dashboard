@@ -6,6 +6,7 @@ from app.pages.data_quality import data_quality_page
 from app.pages.feedback import feedback_page
 from app.pages.pricing import pricing_page
 from app.pages.upload import upload_page
+from app.razorpay_webhook import webhook_api
 from app.states.ask_state import AskState
 from app.states.dashboard_state import DashboardState
 from app.states.filter_state import FilterState
@@ -21,12 +22,13 @@ def index() -> rx.Component:
 
 
 app = rx.App(
+    api_transformer=webhook_api,
     theme=rx.theme(appearance="light"),
     head_components=[
-    rx.el.meta(
-    name="google-site-verification",
-    content="XrNMyDksjgrV8Yac6jj-dWw99yxQjvI_317dBMmP2Ys",
-),
+        rx.el.meta(
+            name="google-site-verification",
+            content="XrNMyDksjgrV8Yac6jj-dWw99yxQjvI_317dBMmP2Ys",
+        ),
         rx.el.style(".rx-built-with-reflex { display: none !important; }"),
         rx.el.link(rel="preconnect", href="https://fonts.googleapis.com"),
         rx.el.link(

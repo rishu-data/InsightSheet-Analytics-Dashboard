@@ -1,8 +1,10 @@
 
 reflex[db]==0.9.8
+fastapi
 pandas
 openpyxl
 plotly
 reportlab
 PyGithub
 razorpay
+psycopg[binary]>=3.1.8

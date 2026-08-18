@@ -1,13 +1,9 @@
 {
-  "version": 3,
+  "version": 4,
   "app_title": "InsightSheet Plan",
   "nav": {
-    "placement": "sidebar",
-    "items": [
-      "Upload Workspace",
-      "Generated Dashboard",
-      "Usability Polish"
-    ]
+    "placement": "none",
+    "items": []
   },
   "pages": [
     {
@@ -16,66 +12,81 @@
       "route": "/",
       "item_ref": {
         "index": 0,
-        "text": "Upload and data-cleaning workspace: build the InsightSheet landing/upload experience with a clean Linear-style light UI, blue accent, bordered white cards on gray-50 background, drag-and-drop CSV/Excel upload, column-mapping guidance, messy-data handling feedback, and plain-language validation states."
+        "text": "Add native InsightSheet Feedback navigation and page with star rating, category selection, validation, successful reset, and lightweight storage structure."
       },
       "blocks": [
         {
-          "id": "hero_intro",
+          "id": "nav-sidebar-root",
+          "type": "sidebar",
+          "label": "Sidebar",
+          "hint": "Upload Workspace, Generated Dashboard, Usability Polish",
+          "x": 0,
+          "y": 0,
+          "w": 3,
+          "h": 10,
+          "item_ref": {
+            "index": 0,
+            "text": "Add native InsightSheet Feedback navigation and page with star rating, category selection, validation, successful reset, and lightweight storage structure."
+          },
+          "type_source": "palette"
+        },
+        {
+          "id": "hero-intro",
           "type": "hero",
           "label": "InsightSheet intro",
           "hint": "Product name, plain-English value proposition, and primary upload prompt",
-          "x": 0,
+          "x": 3,
           "y": 0,
-          "w": 12,
+          "w": 9,
           "h": 2,
           "item_ref": {
             "index": 0,
-            "text": "Upload and data-cleaning workspace: build the InsightSheet landing/upload experience with a clean Linear-style light UI, blue accent, bordered white cards on gray-50 background, drag-and-drop CSV/Excel upload, column-mapping guidance, messy-data handling feedback, and plain-language validation states."
+            "text": "Add native InsightSheet Feedback navigation and page with star rating, category selection, validation, successful reset, and lightweight storage structure."
           },
           "type_source": "palette"
         },
         {
-          "id": "upload_form",
+          "id": "upload-form",
           "type": "form",
           "label": "Drag-and-drop file upload",
           "hint": "CSV/Excel upload area with accepted formats and processing status",
-          "x": 0,
-          "y": 2,
-          "w": 7,
-          "h": 4,
-          "item_ref": {
-            "index": 0,
-            "text": "Upload and data-cleaning workspace: build the InsightSheet landing/upload experience with a clean Linear-style light UI, blue accent, bordered white cards on gray-50 background, drag-and-drop CSV/Excel upload, column-mapping guidance, messy-data handling feedback, and plain-language validation states."
-          },
-          "type_source": "palette"
-        },
-        {
-          "id": "readiness_card",
-          "type": "text",
-          "label": "Data readiness checklist",
-          "hint": "Detected columns, missing values, date parsing, and cleanup guidance",
-          "x": 7,
+          "x": 3,
           "y": 2,
           "w": 5,
           "h": 4,
           "item_ref": {
             "index": 0,
-            "text": "Upload and data-cleaning workspace: build the InsightSheet landing/upload experience with a clean Linear-style light UI, blue accent, bordered white cards on gray-50 background, drag-and-drop CSV/Excel upload, column-mapping guidance, messy-data handling feedback, and plain-language validation states."
+            "text": "Add native InsightSheet Feedback navigation and page with star rating, category selection, validation, successful reset, and lightweight storage structure."
           },
           "type_source": "palette"
         },
         {
-          "id": "data_preview",
-          "type": "table",
-          "label": "Cleaned data preview",
-          "hint": "Preview of normalized rows after upload cleanup",
-          "x": 0,
-          "y": 6,
-          "w": 12,
+          "id": "readiness-card",
+          "type": "text",
+          "label": "Data readiness checklist",
+          "hint": "Detected columns, missing values, date parsing, and cleanup guidance",
+          "x": 8,
+          "y": 2,
+          "w": 4,
           "h": 4,
           "item_ref": {
             "index": 0,
-            "text": "Upload and data-cleaning workspace: build the InsightSheet landing/upload experience with a clean Linear-style light UI, blue accent, bordered white cards on gray-50 background, drag-and-drop CSV/Excel upload, column-mapping guidance, messy-data handling feedback, and plain-language validation states."
+            "text": "Add native InsightSheet Feedback navigation and page with star rating, category selection, validation, successful reset, and lightweight storage structure."
+          },
+          "type_source": "palette"
+        },
+        {
+          "id": "data-preview",
+          "type": "table",
+          "label": "Cleaned data preview",
+          "hint": "Preview of normalized rows after upload cleanup",
+          "x": 3,
+          "y": 6,
+          "w": 9,
+          "h": 4,
+          "item_ref": {
+            "index": 0,
+            "text": "Add native InsightSheet Feedback navigation and page with star rating, category selection, validation, successful reset, and lightweight storage structure."
           },
           "type_source": "palette"
         }
@@ -88,111 +99,126 @@
       "route": "/",
       "item_ref": {
         "index": 1,
-        "text": "Automated dashboard: generate revenue-over-time line chart, top-10 revenue bar chart, month-over-month growth KPI, repeat/churn customer detection, and a plain-English executive summary from the uploaded data."
+        "text": "Add native InsightSheet Pricing / Upgrade navigation and page with Free and Pro plans, safe environment-configured checkout redirect, and missing-payment-url handling."
       },
       "blocks": [
         {
-          "id": "summary_hero",
+          "id": "nav-sidebar-root",
+          "type": "sidebar",
+          "label": "Sidebar",
+          "hint": "Upload Workspace, Generated Dashboard, Usability Polish",
+          "x": 0,
+          "y": 0,
+          "w": 3,
+          "h": 11,
+          "item_ref": {
+            "index": 1,
+            "text": "Add native InsightSheet Pricing / Upgrade navigation and page with Free and Pro plans, safe environment-configured checkout redirect, and missing-payment-url handling."
+          },
+          "type_source": "palette"
+        },
+        {
+          "id": "summary-hero",
           "type": "hero",
           "label": "Plain-English summary",
           "hint": "Revenue growth narrative and key driver sentence",
-          "x": 0,
+          "x": 3,
           "y": 0,
-          "w": 12,
+          "w": 9,
           "h": 2,
           "item_ref": {
             "index": 1,
-            "text": "Automated dashboard: generate revenue-over-time line chart, top-10 revenue bar chart, month-over-month growth KPI, repeat/churn customer detection, and a plain-English executive summary from the uploaded data."
+            "text": "Add native InsightSheet Pricing / Upgrade navigation and page with Free and Pro plans, safe environment-configured checkout redirect, and missing-payment-url handling."
           },
           "type_source": "palette"
         },
         {
-          "id": "mom_kpi",
+          "id": "mom-kpi",
           "type": "kpi",
           "label": "Month-over-month growth KPI",
           "hint": "Growth percentage with current/previous month revenue",
-          "x": 0,
+          "x": 3,
           "y": 2,
-          "w": 4,
+          "w": 3,
           "h": 2,
           "item_ref": {
             "index": 1,
-            "text": "Automated dashboard: generate revenue-over-time line chart, top-10 revenue bar chart, month-over-month growth KPI, repeat/churn customer detection, and a plain-English executive summary from the uploaded data."
+            "text": "Add native InsightSheet Pricing / Upgrade navigation and page with Free and Pro plans, safe environment-configured checkout redirect, and missing-payment-url handling."
           },
           "type_source": "palette"
         },
         {
-          "id": "churn_kpi",
+          "id": "churn-kpi",
           "type": "kpi",
           "label": "At-risk customers KPI",
           "hint": "Count of customers inactive for 60+ days",
-          "x": 4,
+          "x": 6,
           "y": 2,
-          "w": 4,
+          "w": 3,
           "h": 2,
           "item_ref": {
             "index": 1,
-            "text": "Automated dashboard: generate revenue-over-time line chart, top-10 revenue bar chart, month-over-month growth KPI, repeat/churn customer detection, and a plain-English executive summary from the uploaded data."
+            "text": "Add native InsightSheet Pricing / Upgrade navigation and page with Free and Pro plans, safe environment-configured checkout redirect, and missing-payment-url handling."
           },
           "type_source": "palette"
         },
         {
-          "id": "repeat_kpi",
+          "id": "repeat-kpi",
           "type": "kpi",
           "label": "Repeat customer KPI",
           "hint": "Count and percentage of customers with repeat purchases",
-          "x": 8,
+          "x": 9,
           "y": 2,
-          "w": 4,
+          "w": 3,
           "h": 2,
           "item_ref": {
             "index": 1,
-            "text": "Automated dashboard: generate revenue-over-time line chart, top-10 revenue bar chart, month-over-month growth KPI, repeat/churn customer detection, and a plain-English executive summary from the uploaded data."
+            "text": "Add native InsightSheet Pricing / Upgrade navigation and page with Free and Pro plans, safe environment-configured checkout redirect, and missing-payment-url handling."
           },
           "type_source": "palette"
         },
         {
-          "id": "revenue_line",
+          "id": "revenue-line",
           "type": "chart_line",
           "label": "Revenue over time",
           "hint": "Line chart showing revenue by month or date bucket",
-          "x": 0,
-          "y": 4,
-          "w": 7,
-          "h": 4,
-          "item_ref": {
-            "index": 1,
-            "text": "Automated dashboard: generate revenue-over-time line chart, top-10 revenue bar chart, month-over-month growth KPI, repeat/churn customer detection, and a plain-English executive summary from the uploaded data."
-          },
-          "type_source": "palette"
-        },
-        {
-          "id": "top10_bar",
-          "type": "chart_bar",
-          "label": "Top 10 by revenue",
-          "hint": "Visible bars for customers or products ranked by revenue",
-          "x": 7,
+          "x": 3,
           "y": 4,
           "w": 5,
           "h": 4,
           "item_ref": {
             "index": 1,
-            "text": "Automated dashboard: generate revenue-over-time line chart, top-10 revenue bar chart, month-over-month growth KPI, repeat/churn customer detection, and a plain-English executive summary from the uploaded data."
+            "text": "Add native InsightSheet Pricing / Upgrade navigation and page with Free and Pro plans, safe environment-configured checkout redirect, and missing-payment-url handling."
           },
           "type_source": "palette"
         },
         {
-          "id": "customer_table",
+          "id": "top10-bar",
+          "type": "chart_bar",
+          "label": "Top 10 by revenue",
+          "hint": "Visible bars for customers or products ranked by revenue",
+          "x": 8,
+          "y": 4,
+          "w": 4,
+          "h": 4,
+          "item_ref": {
+            "index": 1,
+            "text": "Add native InsightSheet Pricing / Upgrade navigation and page with Free and Pro plans, safe environment-configured checkout redirect, and missing-payment-url handling."
+          },
+          "type_source": "palette"
+        },
+        {
+          "id": "customer-table",
           "type": "table",
           "label": "Churn and repeat-customer list",
           "hint": "Customers with last purchase date, days inactive, and repeat status",
-          "x": 0,
+          "x": 3,
           "y": 8,
-          "w": 12,
+          "w": 9,
           "h": 3,
           "item_ref": {
             "index": 1,
-            "text": "Automated dashboard: generate revenue-over-time line chart, top-10 revenue bar chart, month-over-month growth KPI, repeat/churn customer detection, and a plain-English executive summary from the uploaded data."
+            "text": "Add native InsightSheet Pricing / Upgrade navigation and page with Free and Pro plans, safe environment-configured checkout redirect, and missing-payment-url handling."
           },
           "type_source": "palette"
         }
@@ -205,51 +231,66 @@
       "route": "/",
       "item_ref": {
         "index": 2,
-        "text": "Usability and export-ready polish: add responsive layouts, realistic sample-data fallback, clear empty/error states, chart/table filters, and a non-technical explanation panel for how InsightSheet interprets uploaded files."
+        "text": "Validate existing upload, dashboard, data quality, RFM, forecast, profit, reports, Ask AI, new feedback interactions, pricing behavior, routes, and import safety."
       },
       "blocks": [
         {
-          "id": "dashboard_controls",
+          "id": "nav-sidebar-root",
+          "type": "sidebar",
+          "label": "Sidebar",
+          "hint": "Upload Workspace, Generated Dashboard, Usability Polish",
+          "x": 0,
+          "y": 0,
+          "w": 3,
+          "h": 6,
+          "item_ref": {
+            "index": 2,
+            "text": "Validate existing upload, dashboard, data quality, RFM, forecast, profit, reports, Ask AI, new feedback interactions, pricing behavior, routes, and import safety."
+          },
+          "type_source": "palette"
+        },
+        {
+          "id": "dashboard-controls",
           "type": "form",
           "label": "Dashboard controls",
           "hint": "Select top-10 dimension and time grouping",
-          "x": 0,
+          "x": 3,
           "y": 0,
-          "w": 12,
+          "w": 9,
           "h": 1,
           "item_ref": {
             "index": 2,
-            "text": "Usability and export-ready polish: add responsive layouts, realistic sample-data fallback, clear empty/error states, chart/table filters, and a non-technical explanation panel for how InsightSheet interprets uploaded files."
+            "text": "Validate existing upload, dashboard, data quality, RFM, forecast, profit, reports, Ask AI, new feedback interactions, pricing behavior, routes, and import safety."
           },
           "type_source": "palette"
         },
         {
-          "id": "explanation_card",
+          "id": "explanation-card",
           "type": "text",
           "label": "How InsightSheet reads your file",
           "hint": "Plain-language explanation of accepted columns and cleanup assumptions",
-          "x": 0,
+          "x": 3,
           "y": 1,
-          "w": 6,
+          "w": 4,
           "h": 3,
           "item_ref": {
             "index": 2,
-            "text": "Usability and export-ready polish: add responsive layouts, realistic sample-data fallback, clear empty/error states, chart/table filters, and a non-technical explanation panel for how InsightSheet interprets uploaded files."
+            "text": "Validate existing upload, dashboard, data quality, RFM, forecast, profit, reports, Ask AI, new feedback interactions, pricing behavior, routes, and import safety."
           },
           "type_source": "palette"
         },
         {
-          "id": "states_card",
+          "id": "states-card",
           "type": "text",
           "label": "Sample-data and error states",
           "hint": "Try sample dataset, missing-column guidance, and recovery actions",
-          "x": 6,
+          "x": 7,
           "y": 1,
-          "w": 6,
+          "w": 4,
           "h": 3,
           "item_ref": {
             "index": 2,
-            "text": "Usability and export-ready polish: add responsive layouts, realistic sample-data fallback, clear empty/error states, chart/table filters, and a non-technical explanation panel for how InsightSheet interprets uploaded files."
+            "text": "Validate existing upload, dashboard, data quality, RFM, forecast, profit, reports, Ask AI, new feedback interactions, pricing behavior, routes, and import safety."
           },
           "type_source": "palette"
         }
